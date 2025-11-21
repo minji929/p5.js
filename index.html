@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 P5.js 갤러리</title>
+    <style>
+        body {
+            background-color: #222; /* 배경색 (어두운 회색) */
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 { margin-bottom: 30px; }
+        
+        /* 2x2 그리드 레이아웃 설정 */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 두 개의 열 */
+            gap: 20px; /* 사이 간격 */
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .item {
+            background: #333;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .item h2 { margin: 10px 0; font-size: 1.2rem; }
+
+        /* iframe 스타일 (실제 과제 화면) */
+        iframe {
+            width: 600px;  /* 캔버스 너비에 맞춤 */
+            height: 400px; /* 캔버스 높이에 맞춤 */
+            border: none;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My P5.js Artworks</h1>
+
+    <div class="container">
+        <div class="item">
+            <h2>과제 1</h2>
+            <iframe src="hw1/index.html"></iframe>
+        </div>
+
+        <div class="item">
+            <h2>과제 4</h2>
+            <iframe src="hw4/index.html"></iframe>
+        </div>
+
+        <div class="item">
+            <h2>과제 2</h2>
+            <iframe src="hw2/index.html"></iframe>
+        </div>
+
+        <div class="item">
+            <h2>과제 3</h2>
+            <iframe src="hw3/index.html"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
